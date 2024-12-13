@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --light-brown:#D6C0B3;
+    --brown:#54473F;
+}
+
+body{
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Playfair Display", serif;
+}
+.btn{
+    font-family: "Playfair Display", serif;
+}
+
+.section-padding{
+    padding-top: 80px;
+}
+
+.section-title{
+    text-align: center;
+    font-weight: bold;
+}
+.text-brown{
+    color: #b2744c;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color:#b2744c;
+    margin: 5px 0;
+}
+.checked{
+    color:#ffc107;
+}
+
+.bg-brown{
+    background-color: #b2744c;
+
+}
+/*header start*/
+/* navbar start */
+.navbar{
+    background-color: var(--light-brown);
+}
+.navbar-logo{
+    width: 80px;
+    height: 80px;
+}
+
+.navbar-nav .nav-item a{
+    margin: 0 5px;
+    position: relative;
+    transition: all .2s ease-in;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item{
+    position: relative;
+}
+.navbar-nav .nav-item a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--brown);
+    transition: all .2s ease-in;
+}
+.navbar-nav .nav-item a:hover::before{
+    width: 100%;
+}
+.navbar-nav .nav-item a:hover{
+    color: #E4E0E1;
+}
+
+#navbar-form .btn{
+    background-color: #54473F;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* navbar end */
+/* home section start */
+#home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('images/bc-3.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.home-section{
+    z-index: 5;
+    color: #fff;
+    width: 60%;
+}
+.home-section h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.home-section p{
+    font-size: 1.2rem;
+}
+.home-section .btn{
+    width: 100%;
+    font-size: 1.2rem;
+}
+/* home section end */
+/*header end*/
+
+/* main start */
+
+/* home start */
+.home-img{
+    border-radius: 15px;
+    width: 100%;
+}
+
+/* home end */
+
+/*comment start*/
+.card-comment{
+    background-color: #D6C0B3;
+    border-radius: 50px;
+}
+.author-name{
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+}
+/*comment end*/
+/* menu start */
+#menu .card{
+    color: #b2744c;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+#menu .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#menu .card .card-rate{
+    font-size: 1.2rem;
+}
+#menu .card h4{
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+
+#menu .card .card-details .card-price{
+    margin: 1rem;
+}
+
+#menu .card .card-details .card-price .old-price{
+    font-size: 0.9rem;
+}
+/* menu end */
+/*product start*/
+
+#products .card{
+    color: #b2744c;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+#products .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+#products .card h4{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+#products .card .card-details .card-price{
+    margin: 1rem;
+}
+
+#products .card .card-details .card-price .old-price{
+    font-size: 0.9rem;
+}
+
+/*product end*/
+
+/*gallery start*/
+#gallery .card {
+    position: relative;
+}
+#gallery .card i{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #D6C0B3;
+    z-index: 5;
+    transition: all .5s;
+
+}
+#gallery .card .card-img img{
+    filter: grayscale(100%);
+    transition: all .5s;
+    width: 100%;
+}
+
+#gallery .card:hover img{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+#gallery .card:hover i{
+    transform: scale(1.5);
+}
+/*gallery end*/
+
+/* contact start */
+#contact .col-form{
+    padding: 1rem;
+    font-family: "Playfair Display", serif;
+}
+
+#contact .col-form input, textarea{
+    margin: 1rem auto;
+    width: 100%;
+}
+#contact iframe{
+    height: 100%;
+}
+textarea{
+    resize: none;
+}
+#contact .btn{
+    display: block !important;
+    text-align: center;
+    width: 100%;
+}
+
+/* contact end */
+
+/* blogs start */
+#blogs .card h4, span, p, button{
+    margin: .8rem 0;
+}
+#blogs .card{
+    transition: all .5s;
+    font-family: "Playfair Display", serif;
+}
+#blogs .card h4{
+    text-align: left;
+}
+
+#blogs .card-img{
+    position: relative;
+    width: 100%;
+}
+#blogs .blog-author{
+    font-size: 9px;
+    background-color: #A6AEBF;
+    color: #000;
+    padding: .5rem;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: none;
+    z-index: 8;
+}
+#blogs .card:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#blogs .card:hover .blog-author{
+    display: block;
+    transition: all .5s;
+}
+
+#blogs .card:hover .card-img{
+    filter: brightness(50%);
+}
+/* blogs end */
+
+/* main end */
+
+/* footer start */
+
+#footer{
+    background-color: #b2744c;
+    vertical-align: middle;
+}
+
+#footer .footer-header{
+    font-size: 2rem;
+    border-bottom: 1px solid #fff;
+    width: 50%;
+}
+#footer img{
+    height: 250px;
+    width: 250px;
+}
+
+#footer .list-info{
+    margin: auto !important;
+}
+#footer ul{
+    padding-left: 0 !important;
+}
+#footer .list-item{
+    list-style: none;
+    transition: all .8s;
+    cursor: pointer;
+}
+#footer .list-item:hover{
+    color: #E4E0E1;
+}
+
+/* footer end */
+
+/* mobile responsive */
+@media (max-width:992px) {
+    .home-section{
+        width: 100%;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .home-section, #about h1{
+        font-size: 2.5rem;
+    }
+    .home-section, #about p{
+        font-size: .9rem;
+    }
+    .home-section .btn{
+        width: 100%;
+        font-size: .8rem;
+    }
+    #about{
+        text-align: center;
+        padding: 0 15px;
+    }
+    #footer{
+        text-align: center !important;
+    }
+    #footer .footer-header{
+        display: inline-block;
+        text-align: center;
+    }
+}
